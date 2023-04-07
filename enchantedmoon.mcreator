@@ -828,6 +828,20 @@
           "src/main/resources/assets/enchantedmoon/models/item/nomads_sandslicer.json"
         ]
       }
+    },
+    {
+      "name": "Ta",
+      "type": "tool",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ta",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enchantedmoon/models/item/ta.json",
+          "src/main/java/net/mcreator/enchantedmoon/item/TaItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -871,6 +885,7 @@
       "itemGroup.tabenchanted_moon": "Enchanted Moon",
       "item.enchantedmoon.demonic_horns_helmet": "Demonic Horns",
       "key.enchantedmoon.ultimate_key": "Ultimate",
+      "item.enchantedmoon.ta": "Ta",
       "item.enchantedmoon.soul_eater": "Soul Eater",
       "item.enchantedmoon.gods_cadilo": "Gods Cadilo",
       "item.enchantedmoon.fire_reflector_blocking": "Fire Reflector",

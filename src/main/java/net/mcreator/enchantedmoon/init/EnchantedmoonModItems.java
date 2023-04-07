@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.enchantedmoon.item.TaItem;
 import net.mcreator.enchantedmoon.item.SoulEaterItem;
 import net.mcreator.enchantedmoon.item.NomadsSandslicerItem;
 import net.mcreator.enchantedmoon.item.NaginataItem;
@@ -63,6 +64,7 @@ public class EnchantedmoonModItems {
 	public static final RegistryObject<Item> FIRE_REFLECTOR_BLOCKING = REGISTRY.register("fire_reflector_blocking", () -> new FireReflectorBlockingItem());
 	public static final RegistryObject<Item> CYBERKATANA_ACTIVATED = REGISTRY.register("cyberkatana_activated", () -> new CyberkatanaActivatedItem());
 	public static final RegistryObject<Item> CYBERKATANA_BOSS = REGISTRY.register("cyberkatana_boss", () -> new CyberkatanaBossItem());
+	public static final RegistryObject<Item> TA = REGISTRY.register("ta", () -> new TaItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
