@@ -1,0 +1,7 @@
+{
+  "parent": "enchantedmoon:custom/totem",
+  "textures": {
+    "texture": "enchantedmoon:blocks/kuroshi23",
+    "particle": "enchantedmoon:items/kuroshi23"
+  }
+}

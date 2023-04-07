@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "enchantedmoon:blocks/euridirtblock",
+    "up": "enchantedmoon:blocks/eurigrassblock-top",
+    "north": "enchantedmoon:blocks/eurigrassblock-side",
+    "east": "enchantedmoon:blocks/eurigrassblock-side",
+    "south": "enchantedmoon:blocks/eurigrassblock-side",
+    "west": "enchantedmoon:blocks/eurigrassblock-side",
+    "particle": "enchantedmoon:blocks/euridirtblock"
+  },
+  "render_type": "solid"
+}

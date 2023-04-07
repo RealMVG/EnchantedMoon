@@ -1,0 +1,7 @@
+{
+  "parent": "enchantedmoon:custom/naginata",
+  "textures": {
+    "3": "enchantedmoon:blocks/naginata",
+    "particle": "enchantedmoon:items/naginata_icon"
+  }
+}

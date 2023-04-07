@@ -1,0 +1,27 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "dragonslayer_icon",
+    "customModelName": "dragonslayer:default",
+    "name": "Dragon Slayer",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:EnchantedMoon"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 2,
+    "efficiency": 9.0,
+    "attackSpeed": 0.9,
+    "enchantability": 2,
+    "damageVsEntity": 14.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

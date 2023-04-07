@@ -1,0 +1,27 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "naginata_icon",
+    "customModelName": "naginata:default",
+    "name": "Naginata",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:EnchantedMoon"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 3.0,
+    "enchantability": 6,
+    "damageVsEntity": 6.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

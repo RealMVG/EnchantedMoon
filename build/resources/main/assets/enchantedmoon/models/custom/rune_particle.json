@@ -1,0 +1,6 @@
+{
+  "parent": "enchantedmoon:displaysettings/runev2.item",
+  "textures": {
+    "particle": "enchantedmoon:blocks/runev2"
+  }
+}

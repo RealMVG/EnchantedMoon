@@ -1,0 +1,7 @@
+{
+  "parent": "enchantedmoon:custom/souleater",
+  "textures": {
+    "3": "enchantedmoon:blocks/souleater",
+    "particle": "enchantedmoon:items/souleater_icon"
+  }
+}

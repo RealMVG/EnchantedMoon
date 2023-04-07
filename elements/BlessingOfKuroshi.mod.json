@@ -1,0 +1,17 @@
+{
+  "_fv": 39,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Blessing Cooldown",
+    "icon": "avatarhead3.png",
+    "color": {
+      "value": -16777012,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true
+  }
+}

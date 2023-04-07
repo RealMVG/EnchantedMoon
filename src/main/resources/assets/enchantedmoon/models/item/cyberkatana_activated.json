@@ -1,0 +1,7 @@
+{
+  "parent": "enchantedmoon:custom/cyberkatana",
+  "textures": {
+    "1": "enchantedmoon:blocks/cyberkatana",
+    "particle": "enchantedmoon:items/cyberkatana_activated_icon"
+  }
+}

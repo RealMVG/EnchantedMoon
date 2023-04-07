@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "enchantedmoon:blocks/euriportalblock",
+    "particle": "enchantedmoon:blocks/euriportalblock"
+  },
+  "render_type": "solid"
+}

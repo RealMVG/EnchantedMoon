@@ -1,0 +1,12 @@
+{
+  "berserktheme": {
+    "category": "music",
+    "subtitle": "subtitles.berserktheme",
+    "sounds": [
+      {
+        "name": "enchantedmoon:berserk-soundtrack-4-gatsu",
+        "stream": true
+      }
+    ]
+  }
+}

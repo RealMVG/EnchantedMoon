@@ -1,0 +1,12 @@
+{
+  "_fv": 39,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "§1§lDark: §rShadow Teleport",
+    "keyBindingCategoryKey": "enchantedmoon",
+    "onKeyPressed": {
+      "name": "ShadowTeleport"
+    }
+  }
+}

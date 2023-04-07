@@ -1,0 +1,7 @@
+{
+  "parent": "enchantedmoon:custom/dragonslayer",
+  "textures": {
+    "1": "enchantedmoon:blocks/dragonslayer",
+    "particle": "enchantedmoon:items/dragonslayer_icon"
+  }
+}

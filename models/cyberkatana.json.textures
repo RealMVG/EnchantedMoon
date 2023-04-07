@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "cyberkatana_unactive"
+      },
+      "name": "default"
+    },
+    "cyberkatana_activated": {
+      "map": {
+        "1": "cyberkatana"
+      },
+      "name": "cyberkatana_activated"
+    }
+  }
+}

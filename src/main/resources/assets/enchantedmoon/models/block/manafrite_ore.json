@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "enchantedmoon:blocks/manafrite_ore",
+    "particle": "enchantedmoon:blocks/manafrite_ore"
+  },
+  "render_type": "solid"
+}

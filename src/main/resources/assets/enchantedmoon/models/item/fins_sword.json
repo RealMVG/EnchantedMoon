@@ -1,0 +1,7 @@
+{
+  "parent": "enchantedmoon:custom/finssword",
+  "textures": {
+    "3": "enchantedmoon:blocks/finssword",
+    "particle": "enchantedmoon:items/finssword_icon"
+  }
+}

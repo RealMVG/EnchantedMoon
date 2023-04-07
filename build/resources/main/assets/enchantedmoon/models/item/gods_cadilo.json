@@ -1,0 +1,8 @@
+{
+  "parent": "enchantedmoon:custom/kadilo",
+  "textures": {
+    "4": "enchantedmoon:blocks/kadilo",
+    "missing": "enchantedmoon:blocks/",
+    "particle": "enchantedmoon:items/gods_cadilo_icon"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "6": "firereflector",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

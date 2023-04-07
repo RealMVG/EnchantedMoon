@@ -1,0 +1,19 @@
+{
+  "_fv": 39,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Berserk Theme",
+    "texture": "berserktheme",
+    "description": "4Gatsu",
+    "creativeTab": {
+      "value": "CUSTOM:EnchantedMoon"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:berserktheme"
+    },
+    "lengthInTicks": 100,
+    "analogOutput": 0
+  }
+}

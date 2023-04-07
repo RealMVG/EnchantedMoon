@@ -1,0 +1,9 @@
+{
+  "parent": "enchantedmoon:custom/altar",
+  "textures": {
+    "all": "enchantedmoon:blocks/altar",
+    "particle": "enchantedmoon:blocks/altar",
+    "2": "enchantedmoon:blocks/altar"
+  },
+  "render_type": "solid"
+}
