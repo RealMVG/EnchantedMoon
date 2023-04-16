@@ -915,297 +915,6 @@
         ]
       },
       "path": "~/Weapons"
-    },
-    {
-      "name": "Sapphire",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire.json",
-          "src/main/java/net/mcreator/enchantedmoon/item/SapphireItem.java"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireOre",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_ore",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/enchantedmoon/block/SapphireOreBlock.java",
-          "src/main/java/net/mcreator/enchantedmoon/world/features/ores/SapphireOreFeature.java",
-          "src/main/resources/assets/enchantedmoon/blockstates/sapphire_ore.json",
-          "src/main/resources/data/enchantedmoon/forge/biome_modifier/sapphire_ore_biome_modifier.json",
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire_ore.json",
-          "src/main/resources/assets/enchantedmoon/models/block/sapphire_ore.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireBlock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/enchantedmoon/block/SapphireBlockBlock.java",
-          "src/main/resources/assets/enchantedmoon/models/block/sapphire_block.json",
-          "src/main/resources/assets/enchantedmoon/blockstates/sapphire_block.json",
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire_block.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireOreBlockRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_ore_block_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_ore_block_recipe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireBlockOreRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_block_ore_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_block_ore_recipe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireOreSmelting",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_ore_smelting",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_ore_smelting.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphirePickaxe",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_pickaxe",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire_pickaxe.json",
-          "src/main/java/net/mcreator/enchantedmoon/item/SapphirePickaxeItem.java"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireAxe",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_axe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/enchantedmoon/item/SapphireAxeItem.java",
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire_axe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireSword",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_sword",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/enchantedmoon/item/SapphireSwordItem.java",
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire_sword.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireShovel",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_shovel",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire_shovel.json",
-          "src/main/java/net/mcreator/enchantedmoon/item/SapphireShovelItem.java"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireHoe",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_hoe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/enchantedmoon/item/SapphireHoeItem.java",
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire_hoe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphirePickaxeRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_pickaxe_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_pickaxe_recipe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireAxeRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_axe_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_axe_recipe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireSwordRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_sword_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_sword_recipe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireShovelRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_shovel_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_shovel_recipe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireHoeRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_hoe_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_hoe_recipe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireArmor",
-      "type": "armor",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_armor",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/enchantedmoon/item/SapphireArmorItem.java",
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire_armor_helmet.json",
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire_armor_chestplate.json",
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire_armor_leggings.json",
-          "src/main/resources/assets/enchantedmoon/models/item/sapphire_armor_boots.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireArmorHelmetRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_armor_helmet_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_armor_helmet_recipe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireArmorBodyRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_armor_body_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_armor_body_recipe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireArmorLeggingsRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_armor_leggings_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_armor_leggings_recipe.json"
-        ]
-      },
-      "path": "~/Sets"
-    },
-    {
-      "name": "SapphireArmorBootsRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_armor_boots_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/enchantedmoon/recipes/sapphire_armor_boots_recipe.json"
-        ]
-      },
-      "path": "~/Sets"
     }
   ],
   "variable_elements": [
@@ -1247,55 +956,43 @@
   "language_map": {
     "en_us": {
       "item.enchantedmoon.fins_sword": "Fins Sword",
-      "block.enchantedmoon.euri_grass": "Euri Grass",
+      "item.enchantedmoon.naginata": "Naginata",
+      "gui.enchantedmoon.dragon_slayer_damage.label_dragonslayervalue": "DragonSlayerValue",
+      "item.enchantedmoon.cyberkatana_boss": "Cyberkatana Boss",
+      "block.enchantedmoon.altar": "Altar",
       "entity.enchantedmoon.training_dummy": "Training Dummy",
-      "item.enchantedmoon.fire_reflector": "Fire Reflector",
+      "block.enchantedmoon.euri_grass": "Euri Grass",
       "block.enchantedmoon.manafrite_ore": "Manafrite Ore",
+      "item.enchantedmoon.fire_reflector": "Fire Reflector",
+      "subtitles.berserktheme": "OST from Berserk - 4Gatsu",
+      "item.enchantedmoon.cyberkatana_unactivated": "Cyberkatana §7(Unactivated)",
+      "key.enchantedmoon.shadow_teleport_key": "§1§lDark: §rShadow Teleport",
       "item.enchantedmoon.mini_kuroshi": "§9Mini Kuroshi",
       "block.enchantedmoon.euri_portal_block": "Euri Portal Block",
       "item.enchantedmoon.berserk_theme": "Berserk Theme",
       "item.enchantedmoon.kuroshi_spawn_egg": "Kuroshi Spawn Egg",
       "item.enchantedmoon.magic_circle": "§9Magic Circle",
-      "block.enchantedmoon.sapphire_block": "Block of Sapphire",
       "item.enchantedmoon.berserk_theme.desc": "4Gatsu",
       "key.categories.enchantedmoon": "§lEnchantedMoon Mod",
+      "item.enchantedmoon.cyberkatana_activated": "Cyberkatana §e(Activated)",
       "block.enchantedmoon.euri_dirt": "Euri Grass",
       "block.enchantedmoon.rune": "Rune",
       "item.enchantedmoon.demonic_horns_boots": "Demonic Horns Boots",
       "item.enchantedmoon.demonic_horns_leggings": "Demonic Horns Leggings",
+      "item.enchantedmoon.dragon_slayer": "Dragon Slayer",
       "itemGroup.tabenchanted_moon": "Enchanted Moon",
       "item.enchantedmoon.demonic_horns_helmet": "Demonic Horns",
-      "block.enchantedmoon.sapphire_ore": "Sapphire Ore",
-      "item.enchantedmoon.sapphire_hoe": "Sapphire Hoe",
-      "item.enchantedmoon.fire_reflector_blocking": "Fire Reflector",
-      "item.enchantedmoon.gods_cadilo": "Gods Cadilo",
-      "effect.enchantedmoon.blessing_of_kuroshi": "Blessing Cooldown",
-      "effect.enchantedmoon.cooldown": "Cooldown",
-      "item.enchantedmoon.dark_amulet": "§cDark Amulet",
-      "item.enchantedmoon.sapphire_armor_leggings": "Sapphire Leggings",
-      "item.enchantedmoon.naginata": "Naginata",
-      "gui.enchantedmoon.dragon_slayer_damage.label_dragonslayervalue": "DragonSlayerValue",
-      "item.enchantedmoon.cyberkatana_boss": "Cyberkatana Boss",
-      "block.enchantedmoon.altar": "Altar",
-      "item.enchantedmoon.sapphire_shovel": "Sapphire Shovel",
-      "subtitles.berserktheme": "OST from Berserk - 4Gatsu",
-      "item.enchantedmoon.cyberkatana_unactivated": "Cyberkatana §7(Unactivated)",
-      "key.enchantedmoon.shadow_teleport_key": "§1§lDark: §rShadow Teleport",
-      "item.enchantedmoon.sapphire_sword": "Sapphire Sword",
-      "item.enchantedmoon.sapphire_armor_boots": "Sapphire Boots",
-      "item.enchantedmoon.cyberkatana_activated": "Cyberkatana §e(Activated)",
-      "item.enchantedmoon.sapphire_armor_helmet": "Sapphire Helmet",
-      "item.enchantedmoon.sapphire_axe": "Sapphire Axe",
-      "item.enchantedmoon.dragon_slayer": "Dragon Slayer",
-      "item.enchantedmoon.sapphire_pickaxe": "Sapphire Pickaxe",
       "key.enchantedmoon.ultimate_key": "Weapon Skill",
       "item.enchantedmoon.soul_eater": "Soul Eater",
+      "item.enchantedmoon.gods_cadilo": "Gods Cadilo",
+      "item.enchantedmoon.fire_reflector_blocking": "Fire Reflector",
       "item.enchantedmoon.demonic_horns_chestplate": "Demonic Horns Body",
-      "item.enchantedmoon.sapphire": "Sapphire",
+      "effect.enchantedmoon.blessing_of_kuroshi": "Blessing Cooldown",
       "gui.enchantedmoon.dragon_slayer_damage.label_empty": "",
-      "item.enchantedmoon.sapphire_armor_chestplate": "Sapphire Chestplate",
       "item.enchantedmoon.training_dummy_spawn_egg": "Training Dummy Spawn Egg",
+      "effect.enchantedmoon.cooldown": "Cooldown",
       "item.enchantedmoon.manafrite": "Manafrite",
+      "item.enchantedmoon.dark_amulet": "§cDark Amulet",
       "enchantment.enchantedmoon.life_steal": "§c§lLife Steal",
       "entity.enchantedmoon.kuroshi": "Kuroshi"
     }
