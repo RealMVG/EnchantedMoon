@@ -15,7 +15,7 @@
       }
     ],
     "baseTexture": "",
-    "overlayTarget": "MainMenu",
+    "overlayTarget": "Ingame",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

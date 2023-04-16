@@ -1,5 +1,5 @@
 Java Launcher: C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
-Arguments: '--in-jar, D:\MCreatorWorkspaces\enchantedmoon\build\libs\modid-1.0.jar, --out-jar, D:\MCreatorWorkspaces\enchantedmoon\build\reobfJar\output.jar, --srg-in, D:\MCreatorWorkspaces\enchantedmoon\build\createMcpToSrg\output.tsrg, --live'
+Arguments: '--in-jar, D:\Users\Kuroshi23\MCreatorWorkspaces\enchantedmoon\build\libs\modid-1.0.jar, --out-jar, D:\Users\Kuroshi23\MCreatorWorkspaces\enchantedmoon\build\reobfJar\output.jar, --srg-in, D:\Users\Kuroshi23\MCreatorWorkspaces\enchantedmoon\build\createMcpToSrg\output.tsrg, --live'
 Classpath:
  - D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.11.0\SpecialSource-1.11.0-shaded.jar
  - D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\top\theillusivec4\curios\curios-forge\1.19.2-5.1.1.0_mapped_official_1.19.2\curios-forge-1.19.2-5.1.1.0_mapped_official_1.19.2-api.jar
@@ -111,7 +111,7 @@ Classpath:
  - D:\Users\Kuroshi23\.mcreator\gradle\caches\modules-2\files-2.1\org.antlr\antlr-runtime\3.5.2\cd9cd41361c155f3af0f653009dcecb08d8b4afd\antlr-runtime-3.5.2.jar
  - D:\Users\Kuroshi23\.mcreator\gradle\caches\modules-2\files-2.1\org.abego.treelayout\org.abego.treelayout.core\1.0.3\457216e8e6578099ae63667bb1e4439235892028\org.abego.treelayout.core-1.0.3.jar
  - D:\Users\Kuroshi23\.mcreator\gradle\caches\modules-2\files-2.1\org.glassfish\javax.json\1.0.4\3178f73569fd7a1e5ffc464e680f7a8cc784b85a\javax.json-1.0.4.jar
-Working directory: D:\MCreatorWorkspaces\enchantedmoon\build\reobfJar
+Working directory: D:\Users\Kuroshi23\MCreatorWorkspaces\enchantedmoon\build\reobfJar
 Main class: net.md_5.specialsource.SpecialSource
 ====================================
 Loading mappings
