@@ -3,6 +3,7 @@ Arguments: '--in-jar, D:\MCreatorWorkspaces\enchantedmoon\build\libs\modid-1.0.j
 Classpath:
  - D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.11.0\SpecialSource-1.11.0-shaded.jar
  - D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\top\theillusivec4\curios\curios-forge\1.19.2-5.1.1.0_mapped_official_1.19.2\curios-forge-1.19.2-5.1.1.0_mapped_official_1.19.2-api.jar
+ - D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\kleidersplayerrenderer-682065\4478427_mapped_official_1.19.2\kleidersplayerrenderer-682065-4478427_mapped_official_1.19.2.jar
  - D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\software\bernie\geckolib\geckolib-forge-1.19\3.1.40_mapped_official_1.19.2\geckolib-forge-1.19-3.1.40_mapped_official_1.19.2.jar
  - D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.2.0_mapped_official_1.19.2\forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar
  - D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\minecraft_repo\versions\1.19.2\client-extra.jar

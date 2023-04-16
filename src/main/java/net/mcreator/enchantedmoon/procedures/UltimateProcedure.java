@@ -120,6 +120,34 @@ public class UltimateProcedure {
 					});
 				}
 			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == EnchantedmoonModItems.SOUL_EATER.get()) {
+				{
+					final Vec3 _center = new Vec3(x, y, z);
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
+					for (Entity entityiterator : _entfound) {
+						if (!(entityiterator == entity || entity instanceof ItemEntity) && entity instanceof LivingEntity) {
+							if (entity instanceof LivingEntity _entity)
+								_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 100, 1, (false), (false)));
+							if (entity instanceof LivingEntity _entity)
+								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 30, 2, (false), (false)));
+							if (entity instanceof LivingEntity _entity)
+								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 30, 2, (false), (false)));
+							if (entity instanceof LivingEntity _entity)
+								_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1));
+							entityiterator.hurt(DamageSource.GENERIC, 10);
+							world.addParticle(ParticleTypes.SWEEP_ATTACK, (entity.getX()), (entity.getY() + 1.65), (entity.getZ()), 0, 0, 0);
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.sweep")), SoundSource.NEUTRAL, 1, 1);
+								} else {
+									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.sweep")), SoundSource.NEUTRAL, 1, 1, false);
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

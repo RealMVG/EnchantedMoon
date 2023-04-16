@@ -1,4 +1,14 @@
 repositories {
+  maven {
+    url = "https://cursemaven.com"
+  }
+}
+
+dependencies {
+  implementation fg.deobf("curse.maven:kleidersplayerrenderer-682065:4478427")
+}
+
+repositories {
 maven {
   url = "https://maven.theillusivec4.top/"
   }

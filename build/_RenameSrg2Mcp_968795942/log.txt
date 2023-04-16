@@ -1,0 +1,15 @@
+Java Launcher: C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
+Arguments: '--task, SRG_TO_MCP, --input, D:\Users\Kuroshi23\.mcreator\gradle\caches\modules-2\files-2.1\curse.maven\kleidersplayerrenderer-682065\4478427\518f226e961e1d59a32bbb254788058cf2c35367\kleidersplayerrenderer-682065-4478427.jar, --output, D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\kleidersplayerrenderer-682065\4478427_mapped_official_1.19.2\kleidersplayerrenderer-682065-4478427_mapped_official_1.19.2.jar, --mcp, D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.19.2\mapping-1.19.2-mapping.zip, --strip-signatures'
+Classpath:
+ - D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.3.2\installertools-1.3.2-fatjar.jar
+Working directory: D:\MCreatorWorkspaces\enchantedmoon\build\_RenameSrg2Mcp_968795942
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  D:\Users\Kuroshi23\.mcreator\gradle\caches\modules-2\files-2.1\curse.maven\kleidersplayerrenderer-682065\4478427\518f226e961e1d59a32bbb254788058cf2c35367\kleidersplayerrenderer-682065-4478427.jar
+Output: D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\kleidersplayerrenderer-682065\4478427_mapped_official_1.19.2\kleidersplayerrenderer-682065-4478427_mapped_official_1.19.2.jar
+MCP:    D:\Users\Kuroshi23\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.19.2\mapping-1.19.2-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

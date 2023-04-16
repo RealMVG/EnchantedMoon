@@ -58,7 +58,8 @@ public class CyberkatanaActivatedItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A7o\"The \u00A76\u00A7oSword\u00A7f\u00A7o of the \u00A79\u00A7oLord of Darkness\u00A7f\u00A7o imbued"));
+		list.add(Component.literal("\u00A77\u269D\u2500\u2500\u2B52\u2500\u2B51\u2500\u2B52\u2500\u2500\u269D"));
+		list.add(Component.literal("\u00A7oThe \u00A76\u00A7oSword\u00A7f\u00A7o of the \u00A79\u00A7oLord of Darkness\u00A7f\u00A7o imbued"));
 		list.add(Component.literal("\u00A7owith the power of shadows\""));
 	}
 
