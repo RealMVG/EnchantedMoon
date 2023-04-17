@@ -39,10 +39,10 @@
   "effect.enchantedmoon.blessing_of_kuroshi": "Blessing Cooldown",
   "gui.enchantedmoon.dragon_slayer_damage.label_empty": "",
   "advancements.mage_advancement.descr": "Wow, now u looks like wizard!",
+  "item.enchantedmoon.mana_amulet": "§1Mana Amulet",
   "item.enchantedmoon.training_dummy_spawn_egg": "Training Dummy Spawn Egg",
   "effect.enchantedmoon.cooldown": "Cooldown",
   "item.enchantedmoon.manafrite": "Manafrite",
-  "item.enchantedmoon.dark_amulet": "§cDark Amulet",
   "enchantment.enchantedmoon.life_steal": "§c§lLife Steal",
   "entity.enchantedmoon.kuroshi": "Kuroshi"
 }

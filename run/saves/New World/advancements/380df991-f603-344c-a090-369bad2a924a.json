@@ -1,9 +1,27 @@
 {
   "enchantedmoon:mage_advancement": {
     "criteria": {
-      "mage_advancement": "2023-04-17 13:05:02 +0300"
+      "mage_advancement": "2023-04-17 14:21:53 +0300"
     },
     "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2023-04-17 14:24:03 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "minecraft:zombie": "2023-04-17 14:24:03 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:zombie": "2023-04-17 14:24:03 +0300"
+    },
+    "done": false
   },
   "DataVersion": 3120
 }

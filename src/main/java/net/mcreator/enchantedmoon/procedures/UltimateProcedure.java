@@ -22,6 +22,7 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.enchantedmoon.network.EnchantedmoonModVariables;
 import net.mcreator.enchantedmoon.init.EnchantedmoonModParticleTypes;
 import net.mcreator.enchantedmoon.init.EnchantedmoonModMobEffects;
 import net.mcreator.enchantedmoon.init.EnchantedmoonModItems;
@@ -35,8 +36,16 @@ public class UltimateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(EnchantedmoonModMobEffects.COOLDOWN.get()) : false)) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == EnchantedmoonModItems.DRAGON_SLAYER.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == EnchantedmoonModItems.DRAGON_SLAYER.get()) {
+			if ((entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EnchantedmoonModVariables.PlayerVariables())).CurrectMana >= 45
+					&& !(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(EnchantedmoonModMobEffects.COOLDOWN.get()) : false)) {
+				{
+					double _setval = (entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EnchantedmoonModVariables.PlayerVariables())).CurrectMana - 45;
+					entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.CurrectMana = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 				{
 					final Vec3 _center = new Vec3(x, y, z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
@@ -49,6 +58,8 @@ public class UltimateProcedure {
 								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 30, 2, (false), (false)));
 							EnchantedmoonMod.queueServerWork(20, () -> {
 								entityiterator.hurt(DamageSource.GENERIC, 18);
+								if (entity instanceof LivingEntity _entity)
+									_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 30, 3, (false), (false)));
 								if (entity instanceof LivingEntity _entity)
 									_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 100, 1, (false), (false)));
 								world.addParticle(ParticleTypes.SWEEP_ATTACK, (entity.getX()), (entity.getY() + 1.65), (entity.getZ()), 0, 0, 0);
@@ -64,12 +75,22 @@ public class UltimateProcedure {
 					}
 				}
 			}
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == EnchantedmoonModItems.CYBERKATANA_ACTIVATED.get()) {
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == EnchantedmoonModItems.CYBERKATANA_ACTIVATED.get()) {
+			if ((entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EnchantedmoonModVariables.PlayerVariables())).CurrectMana >= 80
+					&& !(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(EnchantedmoonModMobEffects.COOLDOWN.get()) : false)) {
+				{
+					double _setval = (entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EnchantedmoonModVariables.PlayerVariables())).CurrectMana - 80;
+					entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.CurrectMana = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 				entity.getPersistentData().putDouble("TotalTarget", 0);
 				entity.getPersistentData().putDouble("CurrentTarget", 0);
 				entity.getPersistentData().putDouble("Timer", 0);
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 200, 1, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 400, 1, (false), (false)));
 				{
 					final Vec3 _center = new Vec3(x, y, z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
@@ -120,10 +141,20 @@ public class UltimateProcedure {
 					});
 				}
 			}
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == EnchantedmoonModItems.SOUL_EATER.get()) {
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == EnchantedmoonModItems.SOUL_EATER.get()) {
+			if ((entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EnchantedmoonModVariables.PlayerVariables())).CurrectMana >= 60
+					&& !(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(EnchantedmoonModMobEffects.COOLDOWN.get()) : false)) {
+				{
+					double _setval = (entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EnchantedmoonModVariables.PlayerVariables())).CurrectMana - 60;
+					entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.CurrectMana = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 				{
 					final Vec3 _center = new Vec3(x, y, z);
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
 							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator == entity || entity instanceof ItemEntity) && entity instanceof LivingEntity) {
@@ -134,7 +165,7 @@ public class UltimateProcedure {
 							if (entity instanceof LivingEntity _entity)
 								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 30, 2, (false), (false)));
 							if (entity instanceof LivingEntity _entity)
-								_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1));
+								_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 2));
 							entityiterator.hurt(DamageSource.GENERIC, 10);
 							world.addParticle(ParticleTypes.SWEEP_ATTACK, (entity.getX()), (entity.getY() + 1.65), (entity.getZ()), 0, 0, 0);
 							if (world instanceof Level _level) {

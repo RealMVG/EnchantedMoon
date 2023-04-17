@@ -20,7 +20,7 @@ public class ShadowTeleportProcedure {
 		double loop = 0;
 		double zRadius = 0;
 		double particleAmount = 0;
-		if ((entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EnchantedmoonModVariables.PlayerVariables())).CurrectMana > 20
+		if ((entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EnchantedmoonModVariables.PlayerVariables())).CurrectMana >= 20
 				&& !(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(EnchantedmoonModMobEffects.COOLDOWN.get()) : false)) {
 			{
 				double _setval = (entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EnchantedmoonModVariables.PlayerVariables())).CurrectMana - 20;

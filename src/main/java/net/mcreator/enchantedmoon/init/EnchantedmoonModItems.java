@@ -18,6 +18,7 @@ import net.mcreator.enchantedmoon.item.SoulEaterItem;
 import net.mcreator.enchantedmoon.item.NaginataItem;
 import net.mcreator.enchantedmoon.item.MiniKuroshiItem;
 import net.mcreator.enchantedmoon.item.ManafriteItem;
+import net.mcreator.enchantedmoon.item.ManaAmuletItem;
 import net.mcreator.enchantedmoon.item.MagicCircleItem;
 import net.mcreator.enchantedmoon.item.GodsCadiloItem;
 import net.mcreator.enchantedmoon.item.FireReflectorItem;
@@ -25,7 +26,6 @@ import net.mcreator.enchantedmoon.item.FireReflectorBlockingItem;
 import net.mcreator.enchantedmoon.item.FinsSwordItem;
 import net.mcreator.enchantedmoon.item.DragonSlayerItem;
 import net.mcreator.enchantedmoon.item.DemonicHornsItem;
-import net.mcreator.enchantedmoon.item.DarkAmuletItem;
 import net.mcreator.enchantedmoon.item.CyberkatanaUnactivatedItem;
 import net.mcreator.enchantedmoon.item.CyberkatanaBossItem;
 import net.mcreator.enchantedmoon.item.CyberkatanaActivatedItem;
@@ -53,7 +53,6 @@ public class EnchantedmoonModItems {
 	public static final RegistryObject<Item> ALTAR = block(EnchantedmoonModBlocks.ALTAR, EnchantedmoonModTabs.TAB_ENCHANTED_MOON);
 	public static final RegistryObject<Item> MANAFRITE = REGISTRY.register("manafrite", () -> new ManafriteItem());
 	public static final RegistryObject<Item> MANAFRITE_ORE = block(EnchantedmoonModBlocks.MANAFRITE_ORE, EnchantedmoonModTabs.TAB_ENCHANTED_MOON);
-	public static final RegistryObject<Item> DARK_AMULET = REGISTRY.register("dark_amulet", () -> new DarkAmuletItem());
 	public static final RegistryObject<Item> TRAINING_DUMMY_SPAWN_EGG = REGISTRY.register("training_dummy_spawn_egg",
 			() -> new ForgeSpawnEggItem(EnchantedmoonModEntities.TRAINING_DUMMY, -13421773, -256, new Item.Properties().tab(EnchantedmoonModTabs.TAB_ENCHANTED_MOON)));
 	public static final RegistryObject<Item> KUROSHI_SPAWN_EGG = REGISTRY.register("kuroshi_spawn_egg",
@@ -61,6 +60,7 @@ public class EnchantedmoonModItems {
 	public static final RegistryObject<Item> FIRE_REFLECTOR_BLOCKING = REGISTRY.register("fire_reflector_blocking", () -> new FireReflectorBlockingItem());
 	public static final RegistryObject<Item> CYBERKATANA_ACTIVATED = REGISTRY.register("cyberkatana_activated", () -> new CyberkatanaActivatedItem());
 	public static final RegistryObject<Item> CYBERKATANA_BOSS = REGISTRY.register("cyberkatana_boss", () -> new CyberkatanaBossItem());
+	public static final RegistryObject<Item> MANA_AMULET = REGISTRY.register("mana_amulet", () -> new ManaAmuletItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

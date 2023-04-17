@@ -31,7 +31,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.enchantedmoon.procedures.BossProcedure;
 import net.mcreator.enchantedmoon.init.EnchantedmoonModItems;
 import net.mcreator.enchantedmoon.init.EnchantedmoonModEntities;
 
@@ -120,12 +119,6 @@ public class KuroshiEntity extends Monster {
 		if (source.getMsgId().equals("witherSkull"))
 			return false;
 		return super.hurt(source, amount);
-	}
-
-	@Override
-	public void baseTick() {
-		super.baseTick();
-		BossProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

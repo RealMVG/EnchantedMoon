@@ -24,12 +24,6 @@ description='''
 
 
 [[dependencies.enchantedmoon]]
-    modId="kleidersplayerrenderer"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.enchantedmoon]]
     modId="curios_api"
     mandatory=false
     versionRange="[0,)"

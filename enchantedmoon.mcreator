@@ -59,8 +59,8 @@
       "registry_name": "cyber_sweep",
       "metadata": {
         "files": [
-          "src/main/resources/assets/enchantedmoon/particles/cyber_sweep.json",
-          "src/main/java/net/mcreator/enchantedmoon/client/particle/CyberSweepParticle.java"
+          "src/main/java/net/mcreator/enchantedmoon/client/particle/CyberSweepParticle.java",
+          "src/main/resources/assets/enchantedmoon/particles/cyber_sweep.json"
         ]
       },
       "path": "~/Particles"
@@ -100,8 +100,8 @@
       "registry_name": "fire_reflector",
       "metadata": {
         "files": [
-          "src/main/resources/assets/enchantedmoon/models/item/fire_reflector.json",
-          "src/main/java/net/mcreator/enchantedmoon/item/FireReflectorItem.java"
+          "src/main/java/net/mcreator/enchantedmoon/item/FireReflectorItem.java",
+          "src/main/resources/assets/enchantedmoon/models/item/fire_reflector.json"
         ]
       },
       "path": "~/Weapons"
@@ -115,8 +115,8 @@
       "registry_name": "fire_reflector_blocking",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/item/FireReflectorBlockingItem.java",
-          "src/main/resources/assets/enchantedmoon/models/item/fire_reflector_blocking.json"
+          "src/main/resources/assets/enchantedmoon/models/item/fire_reflector_blocking.json",
+          "src/main/java/net/mcreator/enchantedmoon/item/FireReflectorBlockingItem.java"
         ]
       },
       "path": "~/Weapons"
@@ -237,8 +237,8 @@
       "registry_name": "soul_eater",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/item/SoulEaterItem.java",
-          "src/main/resources/assets/enchantedmoon/models/item/soul_eater.json"
+          "src/main/resources/assets/enchantedmoon/models/item/soul_eater.json",
+          "src/main/java/net/mcreator/enchantedmoon/item/SoulEaterItem.java"
         ]
       },
       "path": "~/Weapons"
@@ -267,8 +267,8 @@
       "registry_name": "fins_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/item/FinsSwordItem.java",
-          "src/main/resources/assets/enchantedmoon/models/item/fins_sword.json"
+          "src/main/resources/assets/enchantedmoon/models/item/fins_sword.json",
+          "src/main/java/net/mcreator/enchantedmoon/item/FinsSwordItem.java"
         ]
       },
       "path": "~/Weapons"
@@ -282,8 +282,8 @@
       "registry_name": "naginata",
       "metadata": {
         "files": [
-          "src/main/resources/assets/enchantedmoon/models/item/naginata.json",
-          "src/main/java/net/mcreator/enchantedmoon/item/NaginataItem.java"
+          "src/main/java/net/mcreator/enchantedmoon/item/NaginataItem.java",
+          "src/main/resources/assets/enchantedmoon/models/item/naginata.json"
         ]
       },
       "path": "~/Weapons"
@@ -311,8 +311,8 @@
       "registry_name": "cyberkatana_unactivated",
       "metadata": {
         "files": [
-          "src/main/resources/assets/enchantedmoon/models/item/cyberkatana_unactivated.json",
-          "src/main/java/net/mcreator/enchantedmoon/item/CyberkatanaUnactivatedItem.java"
+          "src/main/java/net/mcreator/enchantedmoon/item/CyberkatanaUnactivatedItem.java",
+          "src/main/resources/assets/enchantedmoon/models/item/cyberkatana_unactivated.json"
         ]
       },
       "path": "~/Weapons"
@@ -326,8 +326,8 @@
       "registry_name": "cyberkatana_activated",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/item/CyberkatanaActivatedItem.java",
-          "src/main/resources/assets/enchantedmoon/models/item/cyberkatana_activated.json"
+          "src/main/resources/assets/enchantedmoon/models/item/cyberkatana_activated.json",
+          "src/main/java/net/mcreator/enchantedmoon/item/CyberkatanaActivatedItem.java"
         ]
       },
       "path": "~/Weapons"
@@ -417,9 +417,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/enchantedmoon/blockstates/euri_grass.json",
-          "src/main/java/net/mcreator/enchantedmoon/block/EuriGrassBlock.java",
           "src/main/resources/assets/enchantedmoon/models/block/euri_grass.json",
-          "src/main/resources/assets/enchantedmoon/models/item/euri_grass.json"
+          "src/main/resources/assets/enchantedmoon/models/item/euri_grass.json",
+          "src/main/java/net/mcreator/enchantedmoon/block/EuriGrassBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -434,9 +434,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/enchantedmoon/models/block/euri_dirt.json",
-          "src/main/java/net/mcreator/enchantedmoon/block/EuriDirtBlock.java",
+          "src/main/resources/assets/enchantedmoon/models/item/euri_dirt.json",
           "src/main/resources/assets/enchantedmoon/blockstates/euri_dirt.json",
-          "src/main/resources/assets/enchantedmoon/models/item/euri_dirt.json"
+          "src/main/java/net/mcreator/enchantedmoon/block/EuriDirtBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -451,9 +451,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/enchantedmoon/models/block/euri_portal_block.json",
-          "src/main/java/net/mcreator/enchantedmoon/block/EuriPortalBlockBlock.java",
           "src/main/resources/assets/enchantedmoon/models/item/euri_portal_block.json",
-          "src/main/resources/assets/enchantedmoon/blockstates/euri_portal_block.json"
+          "src/main/resources/assets/enchantedmoon/blockstates/euri_portal_block.json",
+          "src/main/java/net/mcreator/enchantedmoon/block/EuriPortalBlockBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -467,12 +467,12 @@
       "registry_name": "manafrite_ore",
       "metadata": {
         "files": [
+          "src/main/resources/assets/enchantedmoon/models/block/manafrite_ore.json",
+          "src/main/java/net/mcreator/enchantedmoon/block/ManafriteOreBlock.java",
+          "src/main/java/net/mcreator/enchantedmoon/world/features/ores/ManafriteOreFeature.java",
           "src/main/resources/data/enchantedmoon/forge/biome_modifier/manafrite_ore_biome_modifier.json",
           "src/main/resources/assets/enchantedmoon/models/item/manafrite_ore.json",
-          "src/main/java/net/mcreator/enchantedmoon/block/ManafriteOreBlock.java",
-          "src/main/resources/assets/enchantedmoon/blockstates/manafrite_ore.json",
-          "src/main/java/net/mcreator/enchantedmoon/world/features/ores/ManafriteOreFeature.java",
-          "src/main/resources/assets/enchantedmoon/models/block/manafrite_ore.json"
+          "src/main/resources/assets/enchantedmoon/blockstates/manafrite_ore.json"
         ]
       },
       "path": "~/Blocks"
@@ -486,8 +486,8 @@
       "registry_name": "manafrite",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/item/ManafriteItem.java",
-          "src/main/resources/assets/enchantedmoon/models/item/manafrite.json"
+          "src/main/resources/assets/enchantedmoon/models/item/manafrite.json",
+          "src/main/java/net/mcreator/enchantedmoon/item/ManafriteItem.java"
         ]
       },
       "path": "~/Items"
@@ -532,10 +532,10 @@
       "registry_name": "altar",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/enchantedmoon/block/AltarBlock.java",
           "src/main/resources/assets/enchantedmoon/blockstates/altar.json",
           "src/main/resources/assets/enchantedmoon/models/block/altar.json",
-          "src/main/resources/assets/enchantedmoon/models/item/altar.json",
-          "src/main/java/net/mcreator/enchantedmoon/block/AltarBlock.java"
+          "src/main/resources/assets/enchantedmoon/models/item/altar.json"
         ]
       },
       "path": "~/Blocks"
@@ -549,16 +549,16 @@
       "registry_name": "rune",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/block/entity/RuneTileEntity.java",
-          "src/main/java/net/mcreator/enchantedmoon/block/renderer/RuneDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/enchantedmoon/block/model/RuneDisplayModel.java",
           "src/main/java/net/mcreator/enchantedmoon/block/model/RuneBlockModel.java",
+          "src/main/java/net/mcreator/enchantedmoon/block/display/RuneDisplayItem.java",
+          "src/main/java/net/mcreator/enchantedmoon/block/renderer/RuneDisplayItemRenderer.java",
           "src/main/resources/assets/enchantedmoon/models/custom/rune_particle.json",
-          "src/main/resources/assets/enchantedmoon/models/item/rune.json",
           "src/main/java/net/mcreator/enchantedmoon/block/RuneBlock.java",
           "src/main/java/net/mcreator/enchantedmoon/block/renderer/RuneTileRenderer.java",
-          "src/main/java/net/mcreator/enchantedmoon/block/display/RuneDisplayItem.java",
-          "src/main/resources/assets/enchantedmoon/blockstates/rune.json"
+          "src/main/java/net/mcreator/enchantedmoon/block/model/RuneDisplayModel.java",
+          "src/main/resources/assets/enchantedmoon/models/item/rune.json",
+          "src/main/resources/assets/enchantedmoon/blockstates/rune.json",
+          "src/main/java/net/mcreator/enchantedmoon/block/entity/RuneTileEntity.java"
         ]
       },
       "path": "~/Blocks"
@@ -685,8 +685,8 @@
       "registry_name": "mini_kuroshi",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/item/MiniKuroshiItem.java",
-          "src/main/resources/assets/enchantedmoon/models/item/mini_kuroshi.json"
+          "src/main/resources/assets/enchantedmoon/models/item/mini_kuroshi.json",
+          "src/main/java/net/mcreator/enchantedmoon/item/MiniKuroshiItem.java"
         ]
       },
       "path": "~/Baubles"
@@ -735,9 +735,9 @@
       "registry_name": "training_dummy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/client/renderer/TrainingDummyRenderer.java",
           "src/main/java/net/mcreator/enchantedmoon/entity/TrainingDummyEntity.java",
-          "src/main/resources/assets/enchantedmoon/models/item/training_dummy_spawn_egg.json"
+          "src/main/resources/assets/enchantedmoon/models/item/training_dummy_spawn_egg.json",
+          "src/main/java/net/mcreator/enchantedmoon/client/renderer/TrainingDummyRenderer.java"
         ]
       }
     },
@@ -775,21 +775,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "DarkAmulet",
-      "type": "curiosbauble",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dark_amulet",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/enchantedmoon/models/item/dark_amulet.json",
-          "src/main/java/net/mcreator/enchantedmoon/item/DarkAmuletItem.java"
-        ]
-      },
-      "path": "~/Baubles"
     },
     {
       "name": "CyberkatanaTooltip",
@@ -1247,41 +1232,6 @@
       "path": "~/Mana"
     },
     {
-      "name": "Boss",
-      "type": "procedure",
-      "sortid": 87,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boss",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/enchantedmoon/procedures/BossProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "ManaSteal",
       "type": "enchantment",
       "sortid": 88,
@@ -1345,6 +1295,61 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/enchantedmoon/procedures/MagicCircleProcedure2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Baubles"
+    },
+    {
+      "name": "ManaAmulet",
+      "type": "curiosbauble",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_amulet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enchantedmoon/models/item/mana_amulet.json",
+          "src/main/java/net/mcreator/enchantedmoon/item/ManaAmuletItem.java"
+        ]
+      },
+      "path": "~/Baubles"
+    },
+    {
+      "name": "ManaAmuletProcedure1",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_amulet_procedure_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enchantedmoon/procedures/ManaAmuletProcedure1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Baubles"
+    },
+    {
+      "name": "ManaAmuletProcedure2",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_amulet_procedure_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enchantedmoon/procedures/ManaAmuletProcedure2Procedure.java"
         ],
         "dependencies": [
           {
@@ -1446,10 +1451,10 @@
       "effect.enchantedmoon.blessing_of_kuroshi": "Blessing Cooldown",
       "gui.enchantedmoon.dragon_slayer_damage.label_empty": "",
       "advancements.mage_advancement.descr": "Wow, now u looks like wizard!",
+      "item.enchantedmoon.mana_amulet": "§1Mana Amulet",
       "item.enchantedmoon.training_dummy_spawn_egg": "Training Dummy Spawn Egg",
       "effect.enchantedmoon.cooldown": "Cooldown",
       "item.enchantedmoon.manafrite": "Manafrite",
-      "item.enchantedmoon.dark_amulet": "§cDark Amulet",
       "enchantment.enchantedmoon.life_steal": "§c§lLife Steal",
       "entity.enchantedmoon.kuroshi": "Kuroshi"
     }
@@ -1530,7 +1535,6 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "kleidersplayerrenderer",
       "curios_api",
       "geckolib"
     ],

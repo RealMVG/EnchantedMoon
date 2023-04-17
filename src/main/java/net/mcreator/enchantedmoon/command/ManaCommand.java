@@ -34,18 +34,6 @@ public class ManaCommand {
 
 					ManaComProcProcedure.execute(arguments, entity);
 					return 0;
-				}))).then(Commands.argument("ManaCount", DoubleArgumentType.doubleArg(0, 100)).executes(arguments -> {
-					ServerLevel world = arguments.getSource().getLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null)
-						entity = FakePlayerFactory.getMinecraft(world);
-					Direction direction = entity.getDirection();
-
-					ManaComProcProcedure.execute(arguments, entity);
-					return 0;
-				})));
+				}))));
 	}
 }
