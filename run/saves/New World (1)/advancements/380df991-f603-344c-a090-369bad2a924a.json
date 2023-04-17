@@ -1,7 +1,25 @@
 {
-  "minecraft:recipes/misc/bone_meal": {
+  "enchantedmoon:mage_advancement": {
     "criteria": {
-      "has_bone": "2023-04-06 05:42:50 +0300"
+      "mage_advancement": "2023-04-17 11:35:27 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_salmon_from_smoking": {
+    "criteria": {
+      "has_salmon": "2023-04-17 11:57:06 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_salmon_from_campfire_cooking": {
+    "criteria": {
+      "has_salmon": "2023-04-17 11:57:06 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_salmon": {
+    "criteria": {
+      "has_salmon": "2023-04-17 11:57:06 +0300"
     },
     "done": true
   },

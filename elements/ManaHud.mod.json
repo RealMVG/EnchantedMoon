@@ -1,0 +1,166 @@
+{
+  "_fv": 39,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "manabar_empry.png",
+          "use1Xscale": false,
+          "x": 6,
+          "y": 233
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_full_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBarProc1"
+          },
+          "x": 6,
+          "y": 233
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_full_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBarProc2"
+          },
+          "x": 15,
+          "y": 233
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_full_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBarProc3"
+          },
+          "x": 22,
+          "y": 233
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_full_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBarProc4"
+          },
+          "x": 31,
+          "y": 233
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_full_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBarProc5"
+          },
+          "x": 38,
+          "y": 233
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_full_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBarProc6"
+          },
+          "x": 47,
+          "y": 233
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_full_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBarProc7"
+          },
+          "x": 54,
+          "y": 233
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_full_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBarProc8"
+          },
+          "x": 63,
+          "y": 233
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_full_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBarProc9"
+          },
+          "x": 70,
+          "y": 233
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_full_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBarProc10"
+          },
+          "x": 79,
+          "y": 233
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_mana_count",
+          "text": {
+            "fixedValue": "",
+            "name": "ManaCount"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 6,
+          "y": 221
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "ManaBarVisibility"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

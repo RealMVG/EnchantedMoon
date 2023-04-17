@@ -52,7 +52,7 @@ public class SoulEaterTooltipProcedure {
 			}
 			if (Screen.hasControlDown()) {
 				tooltip.add(Component.literal("\u00A77\u269D\u2500\u2500\u2B52\u2500\u2B51\u2500\u2B52\u2500\u2500\u269D"));
-				tooltip.add(Component.literal("\u00A77Durability: \u00A74\u00A7lUnbreakable"));
+				tooltip.add(Component.literal((("\u00A77Durability:" + ((itemstack).getMaxDamage() - (itemstack).getDamageValue())) + "" + (" \u00A77/ " + (itemstack).getMaxDamage()))));
 				tooltip.add(Component.literal("\u00A77Repair Material: \u00A7fNone"));
 				tooltip.add(Component.literal("\u00A77Enchantable: \u00A7aTrue"));
 				tooltip.add(Component.literal("\u00A77Rarity: \u00A76Legendary"));

@@ -34,6 +34,12 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "slotAmount": 1,
+    "onEquip": {
+      "name": "MagicCircleProcedure"
+    },
+    "onUnequip": {
+      "name": "MagicCircleProcedure2"
+    },
     "isFood": false,
     "friendlyPigs": true,
     "enderMask": true,

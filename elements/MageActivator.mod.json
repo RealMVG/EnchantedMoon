@@ -1,0 +1,15 @@
+{
+  "_fv": 39,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "N",
+    "keyBindingName": "Mage Activator",
+    "keyBindingCategoryKey": "enchantedmoon",
+    "onKeyPressed": {
+      "name": "MageGrandProc"
+    },
+    "onKeyReleased": {
+      "name": "MageCheck"
+    }
+  }
+}

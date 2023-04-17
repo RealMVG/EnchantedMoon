@@ -15,14 +15,9 @@ import net.minecraftforge.common.capabilities.CapabilityToken;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.Capability;
 
-import net.minecraft.world.level.saveddata.SavedData;
-import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.Tag;
@@ -38,7 +33,6 @@ import java.util.function.Supplier;
 public class EnchantedmoonModVariables {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
-		EnchantedmoonMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new, SavedDataSyncMessage::handler);
 		EnchantedmoonMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
 	}
 
@@ -72,140 +66,14 @@ public class EnchantedmoonModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-			clone.DragonSlayerDamage = original.DragonSlayerDamage;
-			clone.nametag = original.nametag;
+			clone.Mage = original.Mage;
+			clone.BonusMana = original.BonusMana;
+			clone.CurrectMana = original.CurrectMana;
+			clone.Mana = original.Mana;
+			clone.ManaRegeneration = original.ManaRegeneration;
 			if (!event.isWasDeath()) {
 				clone.ArmorInvisibility = original.ArmorInvisibility;
 			}
-		}
-
-		@SubscribeEvent
-		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getEntity().level.isClientSide()) {
-				SavedData mapdata = MapVariables.get(event.getEntity().level);
-				SavedData worlddata = WorldVariables.get(event.getEntity().level);
-				if (mapdata != null)
-					EnchantedmoonMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(0, mapdata));
-				if (worlddata != null)
-					EnchantedmoonMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(1, worlddata));
-			}
-		}
-
-		@SubscribeEvent
-		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getEntity().level.isClientSide()) {
-				SavedData worlddata = WorldVariables.get(event.getEntity().level);
-				if (worlddata != null)
-					EnchantedmoonMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(1, worlddata));
-			}
-		}
-	}
-
-	public static class WorldVariables extends SavedData {
-		public static final String DATA_NAME = "enchantedmoon_worldvars";
-
-		public static WorldVariables load(CompoundTag tag) {
-			WorldVariables data = new WorldVariables();
-			data.read(tag);
-			return data;
-		}
-
-		public void read(CompoundTag nbt) {
-		}
-
-		@Override
-		public CompoundTag save(CompoundTag nbt) {
-			return nbt;
-		}
-
-		public void syncData(LevelAccessor world) {
-			this.setDirty();
-			if (world instanceof Level level && !level.isClientSide())
-				EnchantedmoonMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(level::dimension), new SavedDataSyncMessage(1, this));
-		}
-
-		static WorldVariables clientSide = new WorldVariables();
-
-		public static WorldVariables get(LevelAccessor world) {
-			if (world instanceof ServerLevel level) {
-				return level.getDataStorage().computeIfAbsent(e -> WorldVariables.load(e), WorldVariables::new, DATA_NAME);
-			} else {
-				return clientSide;
-			}
-		}
-	}
-
-	public static class MapVariables extends SavedData {
-		public static final String DATA_NAME = "enchantedmoon_mapvars";
-		public String DragonSlayerDamageData = "\"\"";
-
-		public static MapVariables load(CompoundTag tag) {
-			MapVariables data = new MapVariables();
-			data.read(tag);
-			return data;
-		}
-
-		public void read(CompoundTag nbt) {
-			DragonSlayerDamageData = nbt.getString("DragonSlayerDamageData");
-		}
-
-		@Override
-		public CompoundTag save(CompoundTag nbt) {
-			nbt.putString("DragonSlayerDamageData", DragonSlayerDamageData);
-			return nbt;
-		}
-
-		public void syncData(LevelAccessor world) {
-			this.setDirty();
-			if (world instanceof Level && !world.isClientSide())
-				EnchantedmoonMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new SavedDataSyncMessage(0, this));
-		}
-
-		static MapVariables clientSide = new MapVariables();
-
-		public static MapVariables get(LevelAccessor world) {
-			if (world instanceof ServerLevelAccessor serverLevelAcc) {
-				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(e -> MapVariables.load(e), MapVariables::new, DATA_NAME);
-			} else {
-				return clientSide;
-			}
-		}
-	}
-
-	public static class SavedDataSyncMessage {
-		public int type;
-		public SavedData data;
-
-		public SavedDataSyncMessage(FriendlyByteBuf buffer) {
-			this.type = buffer.readInt();
-			this.data = this.type == 0 ? new MapVariables() : new WorldVariables();
-			if (this.data instanceof MapVariables _mapvars)
-				_mapvars.read(buffer.readNbt());
-			else if (this.data instanceof WorldVariables _worldvars)
-				_worldvars.read(buffer.readNbt());
-		}
-
-		public SavedDataSyncMessage(int type, SavedData data) {
-			this.type = type;
-			this.data = data;
-		}
-
-		public static void buffer(SavedDataSyncMessage message, FriendlyByteBuf buffer) {
-			buffer.writeInt(message.type);
-			buffer.writeNbt(message.data.save(new CompoundTag()));
-		}
-
-		public static void handler(SavedDataSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-			NetworkEvent.Context context = contextSupplier.get();
-			context.enqueueWork(() -> {
-				if (!context.getDirection().getReceptionSide().isServer()) {
-					if (message.type == 0)
-						MapVariables.clientSide = (MapVariables) message.data;
-					else
-						WorldVariables.clientSide = (WorldVariables) message.data;
-				}
-			});
-			context.setPacketHandled(true);
 		}
 	}
 
@@ -241,8 +109,11 @@ public class EnchantedmoonModVariables {
 
 	public static class PlayerVariables {
 		public double ArmorInvisibility = 0.0;
-		public double DragonSlayerDamage = 0;
-		public String nametag = "\"\"";
+		public boolean Mage = false;
+		public double BonusMana = 0.0;
+		public double CurrectMana = 0;
+		public String Mana = "\"\"";
+		public double ManaRegeneration = 2.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -252,16 +123,22 @@ public class EnchantedmoonModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("ArmorInvisibility", ArmorInvisibility);
-			nbt.putDouble("DragonSlayerDamage", DragonSlayerDamage);
-			nbt.putString("nametag", nametag);
+			nbt.putBoolean("Mage", Mage);
+			nbt.putDouble("BonusMana", BonusMana);
+			nbt.putDouble("CurrectMana", CurrectMana);
+			nbt.putString("Mana", Mana);
+			nbt.putDouble("ManaRegeneration", ManaRegeneration);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			ArmorInvisibility = nbt.getDouble("ArmorInvisibility");
-			DragonSlayerDamage = nbt.getDouble("DragonSlayerDamage");
-			nametag = nbt.getString("nametag");
+			Mage = nbt.getBoolean("Mage");
+			BonusMana = nbt.getDouble("BonusMana");
+			CurrectMana = nbt.getDouble("CurrectMana");
+			Mana = nbt.getString("Mana");
+			ManaRegeneration = nbt.getDouble("ManaRegeneration");
 		}
 	}
 
@@ -287,8 +164,11 @@ public class EnchantedmoonModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.ArmorInvisibility = message.data.ArmorInvisibility;
-					variables.DragonSlayerDamage = message.data.DragonSlayerDamage;
-					variables.nametag = message.data.nametag;
+					variables.Mage = message.data.Mage;
+					variables.BonusMana = message.data.BonusMana;
+					variables.CurrectMana = message.data.CurrectMana;
+					variables.Mana = message.data.Mana;
+					variables.ManaRegeneration = message.data.ManaRegeneration;
 				}
 			});
 			context.setPacketHandled(true);
