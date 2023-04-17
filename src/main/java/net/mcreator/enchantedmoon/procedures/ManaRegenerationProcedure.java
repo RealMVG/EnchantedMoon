@@ -5,9 +5,13 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.enchantedmoon.network.EnchantedmoonModVariables;
+import net.mcreator.enchantedmoon.init.EnchantedmoonModItems;
 
 import javax.annotation.Nullable;
 
@@ -54,6 +58,9 @@ public class ManaRegenerationProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+		}
+		if (!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == EnchantedmoonModItems.DEMONIC_HORNS_HELMET.get())) {
+			entity.getPersistentData().putBoolean("DHbuff", (false));
 		}
 	}
 }
