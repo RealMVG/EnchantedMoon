@@ -71,6 +71,7 @@ public class EnchantedmoonModVariables {
 			clone.CurrectMana = original.CurrectMana;
 			clone.Mana = original.Mana;
 			clone.ManaRegeneration = original.ManaRegeneration;
+			clone.ManaCakeCount = original.ManaCakeCount;
 			if (!event.isWasDeath()) {
 				clone.ArmorInvisibility = original.ArmorInvisibility;
 			}
@@ -114,6 +115,7 @@ public class EnchantedmoonModVariables {
 		public double CurrectMana = 0;
 		public String Mana = "\"\"";
 		public double ManaRegeneration = 2.0;
+		public double ManaCakeCount = 0.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -128,6 +130,7 @@ public class EnchantedmoonModVariables {
 			nbt.putDouble("CurrectMana", CurrectMana);
 			nbt.putString("Mana", Mana);
 			nbt.putDouble("ManaRegeneration", ManaRegeneration);
+			nbt.putDouble("ManaCakeCount", ManaCakeCount);
 			return nbt;
 		}
 
@@ -139,6 +142,7 @@ public class EnchantedmoonModVariables {
 			CurrectMana = nbt.getDouble("CurrectMana");
 			Mana = nbt.getString("Mana");
 			ManaRegeneration = nbt.getDouble("ManaRegeneration");
+			ManaCakeCount = nbt.getDouble("ManaCakeCount");
 		}
 	}
 
@@ -169,6 +173,7 @@ public class EnchantedmoonModVariables {
 					variables.CurrectMana = message.data.CurrectMana;
 					variables.Mana = message.data.Mana;
 					variables.ManaRegeneration = message.data.ManaRegeneration;
+					variables.ManaCakeCount = message.data.ManaCakeCount;
 				}
 			});
 			context.setPacketHandled(true);

@@ -4,6 +4,6 @@
   "definition": {
     "commandName": "mana",
     "permissionLevel": "No requirement",
-    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"entity\"><field name=\"name\">targets</field><field name=\"type\">player</field><statement name=\"args\"><block type=\"number_min_max\"><field name=\"name\">ManaCount</field><field name=\"min\">0</field><field name=\"max\">100</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">ManaComProc</field></block></statement></block></statement></block></next></block></xml>"
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"number_min\"><field name=\"name\">count</field><field name=\"min\">0</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">ManaComProc2</field><next><block type=\"entity\"><field name=\"name\">targets</field><field name=\"type\">players</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">ManaComProc</field></block></statement></block></next></block></statement></block></next></block></xml>"
   }
 }

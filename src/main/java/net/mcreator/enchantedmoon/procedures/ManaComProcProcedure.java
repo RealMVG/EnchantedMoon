@@ -17,7 +17,7 @@ public class ManaComProcProcedure {
 		try {
 			for (Entity entityiterator : EntityArgument.getEntities(arguments, "targets")) {
 				{
-					double _setval = DoubleArgumentType.getDouble(arguments, "ManaCount");
+					double _setval = DoubleArgumentType.getDouble(arguments, "count");
 					entity.getCapability(EnchantedmoonModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.CurrectMana = _setval;
 						capability.syncPlayerVariables(entity);

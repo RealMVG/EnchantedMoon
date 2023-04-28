@@ -30,7 +30,7 @@ public class ShadowTeleportProcedure {
 				});
 			}
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 60, 1, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 20, 1, (false), (false)));
 			xRadius = 0;
 			loop = 0;
 			particleAmount = 16;
