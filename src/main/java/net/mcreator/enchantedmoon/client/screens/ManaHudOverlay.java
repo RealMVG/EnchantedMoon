@@ -37,8 +37,8 @@ public class ManaHudOverlay {
 	public static void eventHandler(RenderGuiEvent.Pre event) {
 		int w = event.getWindow().getGuiScaledWidth();
 		int h = event.getWindow().getGuiScaledHeight();
-		int posX = w / 2;
-		int posY = h / 2;
+		int posX = 0;
+		int posY = h;
 		Level world = null;
 		double x = 0;
 		double y = 0;
@@ -58,51 +58,51 @@ public class ManaHudOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (ManaBarVisibilityProcedure.execute(entity)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("enchantedmoon:textures/screens/manabar_empry.png"));
-			Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -207, posY + 113, 0, 0, 84, 5, 84, 5);
+			Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 5, posY + -7, 0, 0, 84, 5, 84, 5);
 
 			if (ManaBarProc1Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("enchantedmoon:textures/screens/mana_full_1.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -207, posY + 113, 0, 0, 10, 5, 10, 5);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 5, posY + -7, 0, 0, 10, 5, 10, 5);
 			}
 			if (ManaBarProc2Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("enchantedmoon:textures/screens/mana_full_2.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -198, posY + 113, 0, 0, 10, 5, 10, 5);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 14, posY + -7, 0, 0, 10, 5, 10, 5);
 			}
 			if (ManaBarProc3Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("enchantedmoon:textures/screens/mana_full_1.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -191, posY + 113, 0, 0, 10, 5, 10, 5);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 22, posY + -7, 0, 0, 10, 5, 10, 5);
 			}
 			if (ManaBarProc4Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("enchantedmoon:textures/screens/mana_full_2.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -182, posY + 113, 0, 0, 10, 5, 10, 5);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 31, posY + -7, 0, 0, 10, 5, 10, 5);
 			}
 			if (ManaBarProc5Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("enchantedmoon:textures/screens/mana_full_1.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -175, posY + 113, 0, 0, 10, 5, 10, 5);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 38, posY + -7, 0, 0, 10, 5, 10, 5);
 			}
 			if (ManaBarProc6Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("enchantedmoon:textures/screens/mana_full_2.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -166, posY + 113, 0, 0, 10, 5, 10, 5);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 46, posY + -7, 0, 0, 10, 5, 10, 5);
 			}
 			if (ManaBarProc7Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("enchantedmoon:textures/screens/mana_full_1.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -159, posY + 113, 0, 0, 10, 5, 10, 5);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 53, posY + -7, 0, 0, 10, 5, 10, 5);
 			}
 			if (ManaBarProc8Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("enchantedmoon:textures/screens/mana_full_2.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -150, posY + 113, 0, 0, 10, 5, 10, 5);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 62, posY + -7, 0, 0, 10, 5, 10, 5);
 			}
 			if (ManaBarProc9Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("enchantedmoon:textures/screens/mana_full_1.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -143, posY + 113, 0, 0, 10, 5, 10, 5);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 69, posY + -7, 0, 0, 10, 5, 10, 5);
 			}
 			if (ManaBarProc10Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("enchantedmoon:textures/screens/mana_full_2.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -134, posY + 113, 0, 0, 10, 5, 10, 5);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 78, posY + -7, 0, 0, 10, 5, 10, 5);
 			}
 			Minecraft.getInstance().font.draw(event.getPoseStack(),
 
-					ManaCountProcedure.execute(entity), posX + -207, posY + 101, -1);
+					ManaCountProcedure.execute(entity), posX + 6, posY + -18, -1);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

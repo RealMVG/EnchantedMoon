@@ -10,9 +10,7 @@ credits="Created using my brain"
 displayURL="https://discord.gg/KkftTDKaAm"
 logoFile="logo.png"
 authors="Kuroshi23"
-description='''
-Описание я пока что не придумал так что придумайте за меня
-'''
+description="Описание я пока что не придумал так что придумайте за меня"
 
 [[dependencies.enchantedmoon]]
     modId="minecraft"

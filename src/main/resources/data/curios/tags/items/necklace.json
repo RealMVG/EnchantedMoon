@@ -1,7 +1,6 @@
 {
   "replace": "false",
   "values": [
-    "minecraft:air",
-    "enchantedmoon:mana_amulet"
+    "minecraft:air"
   ]
 }

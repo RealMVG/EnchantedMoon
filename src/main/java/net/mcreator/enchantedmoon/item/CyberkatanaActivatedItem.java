@@ -43,7 +43,7 @@ public class CyberkatanaActivatedItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, 3, -2.7f, new Item.Properties().tab(null));
 	}

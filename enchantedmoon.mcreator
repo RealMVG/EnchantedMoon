@@ -1039,7 +1039,7 @@
       "type": "overlay",
       "sortid": 57,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "mana_hud",
       "metadata": {
         "files": [
@@ -1311,61 +1311,6 @@
       "path": "~/Baubles"
     },
     {
-      "name": "ManaAmulet",
-      "type": "curiosbauble",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mana_amulet",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/enchantedmoon/models/item/mana_amulet.json",
-          "src/main/java/net/mcreator/enchantedmoon/item/ManaAmuletItem.java"
-        ]
-      },
-      "path": "~/Baubles"
-    },
-    {
-      "name": "ManaAmuletProcedure1",
-      "type": "procedure",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mana_amulet_procedure_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/enchantedmoon/procedures/ManaAmuletProcedure1Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Baubles"
-    },
-    {
-      "name": "ManaAmuletProcedure2",
-      "type": "procedure",
-      "sortid": 73,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mana_amulet_procedure_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/enchantedmoon/procedures/ManaAmuletProcedure2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Baubles"
-    },
-    {
       "name": "ShadowTeleport1",
       "type": "procedure",
       "sortid": 74,
@@ -1414,15 +1359,16 @@
       "path": "~/Commands"
     },
     {
-      "name": "ManaCakeProc",
+      "name": "DragonSlayerDamageCount",
       "type": "procedure",
-      "sortid": 77,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mana_cake_proc",
+      "registry_name": "dragon_slayer_damage_count",
       "metadata": {
+        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/procedures/ManaCakeProcProcedure.java"
+          "src/main/java/net/mcreator/enchantedmoon/procedures/DragonSlayerDamageCountProcedure.java"
         ],
         "dependencies": [
           {
@@ -1433,43 +1379,147 @@
       }
     },
     {
-      "name": "ManaCake",
+      "name": "DragonSlayerOverlay",
+      "type": "overlay",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_slayer_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enchantedmoon/client/screens/DragonSlayerOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "DragonSlayerOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_slayer_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/enchantedmoon/procedures/DragonSlayerOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mana"
+    },
+    {
+      "name": "DragonSlayerOnKill",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_slayer_on_kill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enchantedmoon/procedures/DragonSlayerOnKillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulDust",
       "type": "item",
-      "sortid": 78,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mana_cake",
+      "registry_name": "soul_dust",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/item/ManaCakeItem.java",
-          "src/main/resources/assets/enchantedmoon/models/item/mana_cake.json"
+          "src/main/java/net/mcreator/enchantedmoon/item/SoulDustItem.java",
+          "src/main/resources/assets/enchantedmoon/models/item/soul_dust.json"
         ]
       }
     },
     {
-      "name": "Cake",
+      "name": "KuroshiLootBag",
+      "type": "item",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kuroshi_loot_bag",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enchantedmoon/item/KuroshiLootBagItem.java",
+          "src/main/resources/assets/enchantedmoon/models/item/kuroshi_loot_bag.json"
+        ]
+      }
+    },
+    {
+      "name": "ManaCookie",
+      "type": "item",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_cookie",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enchantedmoon/models/item/mana_cookie.json",
+          "src/main/java/net/mcreator/enchantedmoon/item/ManaCookieItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ManaCookieProc",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_cookie_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enchantedmoon/procedures/ManaCookieProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cookie",
       "type": "command",
-      "sortid": 79,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cake",
+      "registry_name": "cookie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/command/CakeCommand.java"
+          "src/main/java/net/mcreator/enchantedmoon/command/CookieCommand.java"
         ]
       },
       "path": "~/Commands"
     },
     {
-      "name": "CakeComProc",
+      "name": "CookieComProc",
       "type": "procedure",
-      "sortid": 80,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cake_com_proc",
+      "registry_name": "cookie_com_proc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/procedures/CakeComProcProcedure.java"
+          "src/main/java/net/mcreator/enchantedmoon/procedures/CookieComProcProcedure.java"
         ],
         "dependencies": [
           {
@@ -1485,15 +1535,15 @@
       "path": "~/Commands"
     },
     {
-      "name": "CakeComProc2",
+      "name": "CookieComProc2",
       "type": "procedure",
-      "sortid": 81,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cake_com_proc_2",
+      "registry_name": "cookie_com_proc_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enchantedmoon/procedures/CakeComProc2Procedure.java"
+          "src/main/java/net/mcreator/enchantedmoon/procedures/CookieComProc2Procedure.java"
         ],
         "dependencies": [
           {
@@ -1507,6 +1557,61 @@
         ]
       },
       "path": "~/Commands"
+    },
+    {
+      "name": "ManaRing",
+      "type": "curiosbauble",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enchantedmoon/item/ManaRingItem.java",
+          "src/main/resources/assets/enchantedmoon/models/item/mana_ring.json"
+        ]
+      },
+      "path": "~/Baubles"
+    },
+    {
+      "name": "ManaRingProc1",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_ring_proc_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enchantedmoon/procedures/ManaRingProc1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Baubles"
+    },
+    {
+      "name": "ManaRingProc2",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_ring_proc_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enchantedmoon/procedures/ManaRingProc2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Baubles"
     }
   ],
   "variable_elements": [
@@ -1547,7 +1652,25 @@
       "value": "2.0"
     },
     {
-      "name": "ManaCakeCount",
+      "name": "ManaCookieCount",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "ManaDegeneration",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "DragonSlayer",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "DragonSlayerCount",
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
@@ -1576,10 +1699,13 @@
       "entity.enchantedmoon.training_dummy": "Training Dummy",
       "block.enchantedmoon.manafrite_ore": "Manafrite Ore",
       "item.enchantedmoon.fire_reflector": "Fire Reflector",
+      "item.enchantedmoon.kuroshi_loot_bag": "Kuroshi Loot Bag",
       "subtitles.berserktheme": "OST from Berserk - 4Gatsu",
       "item.enchantedmoon.cyberkatana_unactivated": "Cyberkatana §7(Unactivated)",
       "key.enchantedmoon.shadow_teleport_key": "§1§lDark: §rShadow Teleport",
       "gui.enchantedmoon.mana_hud.label_varmana": "\u003cVAR:Mana\u003e",
+      "item.enchantedmoon.soul_dust": "Soul Dust",
+      "item.enchantedmoon.mana_ring": "ManaRing",
       "block.enchantedmoon.euri_portal_block": "Euri Portal Block",
       "item.enchantedmoon.mini_kuroshi": "§9Mini Kuroshi",
       "item.enchantedmoon.berserk_theme": "Berserk Theme",
@@ -1592,21 +1718,17 @@
       "item.enchantedmoon.cyberkatana_activated": "Cyberkatana §e(Activated)",
       "block.enchantedmoon.euri_dirt": "Euri Grass",
       "block.enchantedmoon.rune": "Rune",
-      "item.enchantedmoon.demonic_horns_boots": "Demonic Horns Boots",
-      "item.enchantedmoon.mana_cake": "§1Mana Cake",
-      "item.enchantedmoon.demonic_horns_leggings": "Demonic Horns Leggings",
       "item.enchantedmoon.dragon_slayer": "Dragon Slayer",
       "itemGroup.tabenchanted_moon": "Enchanted Moon",
       "item.enchantedmoon.demonic_horns_helmet": "Demonic Horns",
+      "item.enchantedmoon.mana_cookie": "Mana Cookie",
       "key.enchantedmoon.ultimate_key": "Weapon Skill",
       "item.enchantedmoon.soul_eater": "Soul Eater",
       "item.enchantedmoon.fire_reflector_blocking": "Fire Reflector",
       "item.enchantedmoon.gods_cadilo": "Gods Cadilo",
-      "item.enchantedmoon.demonic_horns_chestplate": "Demonic Horns Body",
       "effect.enchantedmoon.blessing_of_kuroshi": "Blessing Cooldown",
       "gui.enchantedmoon.dragon_slayer_damage.label_empty": "",
       "advancements.mage_advancement.descr": "Wow, now u looks like wizard!",
-      "item.enchantedmoon.mana_amulet": "§1Mana Amulet",
       "item.enchantedmoon.training_dummy_spawn_egg": "Training Dummy Spawn Egg",
       "effect.enchantedmoon.cooldown": "Cooldown",
       "item.enchantedmoon.manafrite": "Manafrite",
@@ -1702,5 +1824,5 @@
     "modElementsPackage": "net.mcreator.enchantedmoon",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300110610
+  "mcreatorVersion": 202300220712
 }

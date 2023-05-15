@@ -48,7 +48,7 @@ public class GodsCadiloItem extends TieredItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, new Item.Properties().tab(EnchantedmoonModTabs.TAB_ENCHANTED_MOON));
 	}

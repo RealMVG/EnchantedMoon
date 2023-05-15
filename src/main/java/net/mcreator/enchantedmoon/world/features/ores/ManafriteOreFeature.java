@@ -34,7 +34,10 @@ public class ManafriteOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new ManafriteOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("enchantedmoon:manafrite_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), EnchantedmoonModBlocks.MANAFRITE_ORE.get().defaultBlockState())), 8));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), EnchantedmoonModBlocks.MANAFRITE_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.GRANITE.defaultBlockState()), EnchantedmoonModBlocks.MANAFRITE_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.DIORITE.defaultBlockState()), EnchantedmoonModBlocks.MANAFRITE_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.ANDESITE.defaultBlockState()), EnchantedmoonModBlocks.MANAFRITE_ORE.get().defaultBlockState())), 8));
 		PLACED_FEATURE = PlacementUtils.register("enchantedmoon:manafrite_ore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(2), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(46)), BiomeFilter.biome()));
 		return FEATURE;

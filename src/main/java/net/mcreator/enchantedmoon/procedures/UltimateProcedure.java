@@ -52,16 +52,16 @@ public class UltimateProcedure {
 							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator == entity || entity instanceof ItemEntity) && entity instanceof LivingEntity) {
-							if (entity instanceof LivingEntity _entity)
-								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 30, 2, (false), (false)));
-							if (entity instanceof LivingEntity _entity)
-								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 30, 2, (false), (false)));
+							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 30, 2, false, false));
+							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 30, 2, false, false));
 							EnchantedmoonMod.queueServerWork(20, () -> {
 								entityiterator.hurt(DamageSource.GENERIC, 18);
-								if (entity instanceof LivingEntity _entity)
-									_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 30, 3, (false), (false)));
-								if (entity instanceof LivingEntity _entity)
-									_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 100, 1, (false), (false)));
+								if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+									_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 30, 3, false, false));
+								if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+									_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 100, 1, false, false));
 								world.addParticle(ParticleTypes.SWEEP_ATTACK, (entity.getX()), (entity.getY() + 1.65), (entity.getZ()), 0, 0, 0);
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
@@ -89,8 +89,8 @@ public class UltimateProcedure {
 				entity.getPersistentData().putDouble("TotalTarget", 0);
 				entity.getPersistentData().putDouble("CurrentTarget", 0);
 				entity.getPersistentData().putDouble("Timer", 0);
-				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 400, 1, (false), (false)));
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 400, 1, false, false));
 				{
 					final Vec3 _center = new Vec3(x, y, z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
@@ -104,7 +104,7 @@ public class UltimateProcedure {
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.CRIT, x, (y + 1), z, 50, 0, 0, 0, 1.5);
-				for (int index0 = 0; index0 < (int) (entity.getPersistentData().getDouble("TotalTarget")); index0++) {
+				for (int index0 = 0; index0 < (int) entity.getPersistentData().getDouble("TotalTarget"); index0++) {
 					entity.getPersistentData().putDouble("Timer", (entity.getPersistentData().getDouble("Timer") + 2));
 					EnchantedmoonMod.queueServerWork((int) entity.getPersistentData().getDouble("Timer"), () -> {
 						entity.getPersistentData().putDouble("CurrentTarget", (entity.getPersistentData().getDouble("CurrentTarget") + 1));
@@ -116,10 +116,10 @@ public class UltimateProcedure {
 									.collect(Collectors.toList());
 							for (Entity entityiterator : _entfound) {
 								if (entity.getPersistentData().getDouble("CurrentTarget") == entityiterator.getPersistentData().getDouble("TargetQueue")) {
-									if (entity instanceof LivingEntity _entity)
+									if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 										_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 20, 0));
-									if (entity instanceof LivingEntity _entity)
-										_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 30, 3, (false), (false)));
+									if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+										_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 30, 3, false, false));
 									{
 										Entity _ent = entity;
 										_ent.teleportTo((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()));
@@ -158,12 +158,12 @@ public class UltimateProcedure {
 							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator == entity || entity instanceof ItemEntity) && entity instanceof LivingEntity) {
-							if (entity instanceof LivingEntity _entity)
-								_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 100, 1, (false), (false)));
-							if (entity instanceof LivingEntity _entity)
-								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 30, 2, (false), (false)));
-							if (entity instanceof LivingEntity _entity)
-								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 30, 2, (false), (false)));
+							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 100, 1, false, false));
+							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 30, 2, false, false));
+							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 30, 2, false, false));
 							if (entity instanceof LivingEntity _entity)
 								_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 2));
 							entityiterator.hurt(DamageSource.GENERIC, 10);

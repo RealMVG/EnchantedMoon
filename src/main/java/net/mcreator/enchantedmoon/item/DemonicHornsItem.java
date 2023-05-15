@@ -54,7 +54,7 @@ public abstract class DemonicHornsItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 
 			@Override

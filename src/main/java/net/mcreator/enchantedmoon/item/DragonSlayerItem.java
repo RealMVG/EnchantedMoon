@@ -4,8 +4,11 @@ package net.mcreator.enchantedmoon.item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.LivingEntity;
 
+import net.mcreator.enchantedmoon.procedures.DragonSlayerOnKillProcedure;
 import net.mcreator.enchantedmoon.init.EnchantedmoonModTabs;
 
 public class DragonSlayerItem extends SwordItem {
@@ -20,7 +23,7 @@ public class DragonSlayerItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 12f;
+				return 4f;
 			}
 
 			public int getLevel() {
@@ -32,8 +35,15 @@ public class DragonSlayerItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, 3, -3.1f, new Item.Properties().tab(EnchantedmoonModTabs.TAB_ENCHANTED_MOON));
+	}
+
+	@Override
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		DragonSlayerOnKillProcedure.execute(entity, sourceentity);
+		return retval;
 	}
 }

@@ -71,7 +71,10 @@ public class EnchantedmoonModVariables {
 			clone.CurrectMana = original.CurrectMana;
 			clone.Mana = original.Mana;
 			clone.ManaRegeneration = original.ManaRegeneration;
-			clone.ManaCakeCount = original.ManaCakeCount;
+			clone.ManaCookieCount = original.ManaCookieCount;
+			clone.ManaDegeneration = original.ManaDegeneration;
+			clone.DragonSlayer = original.DragonSlayer;
+			clone.DragonSlayerCount = original.DragonSlayerCount;
 			if (!event.isWasDeath()) {
 				clone.ArmorInvisibility = original.ArmorInvisibility;
 			}
@@ -115,7 +118,10 @@ public class EnchantedmoonModVariables {
 		public double CurrectMana = 0;
 		public String Mana = "\"\"";
 		public double ManaRegeneration = 2.0;
-		public double ManaCakeCount = 0.0;
+		public double ManaCookieCount = 0.0;
+		public double ManaDegeneration = 0.0;
+		public String DragonSlayer = "\"\"";
+		public double DragonSlayerCount = 0.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -130,7 +136,10 @@ public class EnchantedmoonModVariables {
 			nbt.putDouble("CurrectMana", CurrectMana);
 			nbt.putString("Mana", Mana);
 			nbt.putDouble("ManaRegeneration", ManaRegeneration);
-			nbt.putDouble("ManaCakeCount", ManaCakeCount);
+			nbt.putDouble("ManaCookieCount", ManaCookieCount);
+			nbt.putDouble("ManaDegeneration", ManaDegeneration);
+			nbt.putString("DragonSlayer", DragonSlayer);
+			nbt.putDouble("DragonSlayerCount", DragonSlayerCount);
 			return nbt;
 		}
 
@@ -142,7 +151,10 @@ public class EnchantedmoonModVariables {
 			CurrectMana = nbt.getDouble("CurrectMana");
 			Mana = nbt.getString("Mana");
 			ManaRegeneration = nbt.getDouble("ManaRegeneration");
-			ManaCakeCount = nbt.getDouble("ManaCakeCount");
+			ManaCookieCount = nbt.getDouble("ManaCookieCount");
+			ManaDegeneration = nbt.getDouble("ManaDegeneration");
+			DragonSlayer = nbt.getString("DragonSlayer");
+			DragonSlayerCount = nbt.getDouble("DragonSlayerCount");
 		}
 	}
 
@@ -173,7 +185,10 @@ public class EnchantedmoonModVariables {
 					variables.CurrectMana = message.data.CurrectMana;
 					variables.Mana = message.data.Mana;
 					variables.ManaRegeneration = message.data.ManaRegeneration;
-					variables.ManaCakeCount = message.data.ManaCakeCount;
+					variables.ManaCookieCount = message.data.ManaCookieCount;
+					variables.ManaDegeneration = message.data.ManaDegeneration;
+					variables.DragonSlayer = message.data.DragonSlayer;
+					variables.DragonSlayerCount = message.data.DragonSlayerCount;
 				}
 			});
 			context.setPacketHandled(true);

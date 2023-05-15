@@ -15,12 +15,14 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.enchantedmoon.item.SoulEaterItem;
+import net.mcreator.enchantedmoon.item.SoulDustItem;
 import net.mcreator.enchantedmoon.item.NaginataItem;
 import net.mcreator.enchantedmoon.item.MiniKuroshiItem;
 import net.mcreator.enchantedmoon.item.ManafriteItem;
-import net.mcreator.enchantedmoon.item.ManaCakeItem;
-import net.mcreator.enchantedmoon.item.ManaAmuletItem;
+import net.mcreator.enchantedmoon.item.ManaRingItem;
+import net.mcreator.enchantedmoon.item.ManaCookieItem;
 import net.mcreator.enchantedmoon.item.MagicCircleItem;
+import net.mcreator.enchantedmoon.item.KuroshiLootBagItem;
 import net.mcreator.enchantedmoon.item.GodsCadiloItem;
 import net.mcreator.enchantedmoon.item.FireReflectorItem;
 import net.mcreator.enchantedmoon.item.FireReflectorBlockingItem;
@@ -58,11 +60,13 @@ public class EnchantedmoonModItems {
 			() -> new ForgeSpawnEggItem(EnchantedmoonModEntities.TRAINING_DUMMY, -13421773, -256, new Item.Properties().tab(EnchantedmoonModTabs.TAB_ENCHANTED_MOON)));
 	public static final RegistryObject<Item> KUROSHI_SPAWN_EGG = REGISTRY.register("kuroshi_spawn_egg",
 			() -> new ForgeSpawnEggItem(EnchantedmoonModEntities.KUROSHI, -16777216, -16777063, new Item.Properties().tab(EnchantedmoonModTabs.TAB_ENCHANTED_MOON)));
-	public static final RegistryObject<Item> MANA_AMULET = REGISTRY.register("mana_amulet", () -> new ManaAmuletItem());
 	public static final RegistryObject<Item> FIRE_REFLECTOR_BLOCKING = REGISTRY.register("fire_reflector_blocking", () -> new FireReflectorBlockingItem());
 	public static final RegistryObject<Item> CYBERKATANA_ACTIVATED = REGISTRY.register("cyberkatana_activated", () -> new CyberkatanaActivatedItem());
 	public static final RegistryObject<Item> CYBERKATANA_BOSS = REGISTRY.register("cyberkatana_boss", () -> new CyberkatanaBossItem());
-	public static final RegistryObject<Item> MANA_CAKE = REGISTRY.register("mana_cake", () -> new ManaCakeItem());
+	public static final RegistryObject<Item> SOUL_DUST = REGISTRY.register("soul_dust", () -> new SoulDustItem());
+	public static final RegistryObject<Item> KUROSHI_LOOT_BAG = REGISTRY.register("kuroshi_loot_bag", () -> new KuroshiLootBagItem());
+	public static final RegistryObject<Item> MANA_COOKIE = REGISTRY.register("mana_cookie", () -> new ManaCookieItem());
+	public static final RegistryObject<Item> MANA_RING = REGISTRY.register("mana_ring", () -> new ManaRingItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -32,7 +32,7 @@ public class FinsSwordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, 3, -3.1f, new Item.Properties().tab(EnchantedmoonModTabs.TAB_ENCHANTED_MOON));
 	}

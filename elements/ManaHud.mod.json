@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,8 +9,8 @@
         "data": {
           "image": "manabar_empry.png",
           "use1Xscale": false,
-          "x": 6,
-          "y": 233
+          "x": 218,
+          "y": 113
         }
       },
       {
@@ -21,8 +21,8 @@
           "displayCondition": {
             "name": "ManaBarProc1"
           },
-          "x": 6,
-          "y": 233
+          "x": 218,
+          "y": 113
         }
       },
       {
@@ -33,8 +33,8 @@
           "displayCondition": {
             "name": "ManaBarProc2"
           },
-          "x": 15,
-          "y": 233
+          "x": 227,
+          "y": 113
         }
       },
       {
@@ -45,8 +45,8 @@
           "displayCondition": {
             "name": "ManaBarProc3"
           },
-          "x": 22,
-          "y": 233
+          "x": 235,
+          "y": 113
         }
       },
       {
@@ -57,8 +57,8 @@
           "displayCondition": {
             "name": "ManaBarProc4"
           },
-          "x": 31,
-          "y": 233
+          "x": 244,
+          "y": 113
         }
       },
       {
@@ -69,8 +69,8 @@
           "displayCondition": {
             "name": "ManaBarProc5"
           },
-          "x": 38,
-          "y": 233
+          "x": 251,
+          "y": 113
         }
       },
       {
@@ -81,8 +81,8 @@
           "displayCondition": {
             "name": "ManaBarProc6"
           },
-          "x": 47,
-          "y": 233
+          "x": 259,
+          "y": 113
         }
       },
       {
@@ -93,8 +93,8 @@
           "displayCondition": {
             "name": "ManaBarProc7"
           },
-          "x": 54,
-          "y": 233
+          "x": 266,
+          "y": 113
         }
       },
       {
@@ -105,8 +105,8 @@
           "displayCondition": {
             "name": "ManaBarProc8"
           },
-          "x": 63,
-          "y": 233
+          "x": 275,
+          "y": 113
         }
       },
       {
@@ -117,8 +117,8 @@
           "displayCondition": {
             "name": "ManaBarProc9"
           },
-          "x": 70,
-          "y": 233
+          "x": 282,
+          "y": 113
         }
       },
       {
@@ -129,8 +129,8 @@
           "displayCondition": {
             "name": "ManaBarProc10"
           },
-          "x": 79,
-          "y": 233
+          "x": 291,
+          "y": 113
         }
       },
       {
@@ -145,8 +145,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 6,
-          "y": 221
+          "x": 219,
+          "y": 102
         }
       }
     ],
@@ -158,7 +158,7 @@
     "gridSettings": {
       "sx": 18,
       "sy": 18,
-      "ox": 11,
+      "ox": 13,
       "oy": 15,
       "snapOnGrid": false
     }

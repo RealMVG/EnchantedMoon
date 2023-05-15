@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.Collections;
 
 public class RuneBlock extends BaseEntityBlock implements EntityBlock {
-	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, 1000);
+	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, 1);
 
 	public RuneBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));

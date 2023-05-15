@@ -29,8 +29,8 @@ public class ShadowTeleportProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 20, 1, (false), (false)));
+			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				_entity.addEffect(new MobEffectInstance(EnchantedmoonModMobEffects.COOLDOWN.get(), 20, 1, false, false));
 			xRadius = 0;
 			loop = 0;
 			particleAmount = 16;

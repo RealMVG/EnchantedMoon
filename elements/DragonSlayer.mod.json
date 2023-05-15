@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "tool",
   "definition": {
     "renderType": 1,
@@ -15,13 +15,16 @@
     "efficiency": 9.0,
     "attackSpeed": 0.9,
     "enchantability": 2,
-    "damageVsEntity": 14.0,
+    "damageVsEntity": 6.0,
     "usageCount": 0,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "DragonSlayerOnKill"
+    }
   }
 }
